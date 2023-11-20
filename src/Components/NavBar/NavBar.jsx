@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import userPic from "../../assets/user.png";
 
 const NavBar = () => {
   const navLinks = (
@@ -46,7 +47,12 @@ const NavBar = () => {
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <div className="avatar mr-4">
+          <div className="w-10 rounded-full">
+            <img src={userPic} />
+          </div>
+        </div>
+        <a className="btn">Login</a>
       </div>
     </div>
   );
