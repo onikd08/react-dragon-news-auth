@@ -8,12 +8,12 @@ const Home = () => {
     <div>
       <Slider></Slider>
       <NavBar></NavBar>
-      <div className="grid lg:grid-cols-4">
-        <div className="border">
+      <div className="grid lg:grid-cols-4 gap-5">
+        <div>
           <LeftSideNav></LeftSideNav>
         </div>
         <div className="border lg:col-span-2">News Container</div>
-        <div className="border">
+        <div>
           <RightSideNav></RightSideNav>
         </div>
       </div>
